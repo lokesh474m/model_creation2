@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topics</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: green;">TOPICS</h1>
+        <table border="2px" cellpadding="15px" cellspacing="0px">
+            <tr>
+                <th>TOPIC NAMES</th>
+            </tr>
+            {% for to in topics %}
+            <tr>
+                <td style="color: darkorange;">{{to.topic_name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

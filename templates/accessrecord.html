@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>access records</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: mediumspringgreen;">ACCESS RECORDS INFORMATION</h1>
+        <table border="2px" cellpadding="15px" cellspacing="0px">
+            <tr>
+                <th>pk value</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Author</th>
+            </tr>
+            {% for ar in access %}
+                <tr>
+                    <td>{{ar.pk}}</td>
+                    <td>{{ar.name}}</td>
+                    <td>{{ar.date}}</td>
+                    <td>{{ar.author}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </center>
+</body>
+</html>
